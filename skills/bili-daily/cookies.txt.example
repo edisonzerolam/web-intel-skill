@@ -1,0 +1,14 @@
+# B站登录 Cookie（示例模板）
+#
+# 用法：把本文件复制为同目录下的 cookies.txt，并填入你自己的值。
+#   cp cookies.txt.example cookies.txt
+#
+# 获取方式：浏览器登录 bilibili.com → F12 → Application/存储 → Cookies →
+#   找到 .bilibili.com 域下的 SESSDATA 与 bili_jct，填入下面两行。
+#
+# ⚠️ cookies.txt 已被 .gitignore 排除，切勿提交到任何仓库。
+# ⚠️ 该 cookie 等同账号登录态，泄露即等于交出账号。
+
+# Netscape HTTP Cookie File
+.bilibili.com	TRUE	/	FALSE	<过期时间戳>	SESSDATA	<你的 SESSDATA>
+.bilibili.com	TRUE	/	FALSE	<过期时间戳>	bili_jct	<你的 bili_jct>

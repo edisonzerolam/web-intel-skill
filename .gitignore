@@ -1,0 +1,43 @@
+# ===== 凭据（绝不入库）=====
+skills/bili-daily/cookies.txt
+skills/bili-daily/*.cookie
+.env
+skills/*/.env
+*.key
+*.pem
+
+# ===== 运行期真实业务数据（案卷隔离）=====
+skills/bili-daily/subs.json
+skills/bili-daily/corpus.jsonl
+skills/bili-daily/ai_group.json
+skills/bili-daily/seen_bvids.json
+skills/bili-daily/t1_hit_*.json
+skills/bili-daily/t1_t2_*.json
+skills/bili-daily/data/req_ledger.json
+skills/bili-daily/data/*.lock
+.state/
+*.jsonl
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# ===== 模型 / 编译缓存 =====
+ms_cache/
+.rocm_cache/
+*.onnx
+*.pt
+*.pth
+*.bin
+
+# ===== 编辑器 / 系统 =====
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*.bak-*
+*~
